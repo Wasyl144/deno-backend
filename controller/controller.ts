@@ -36,3 +36,32 @@ export const getProduct = ({ params, response }: { params: {id: string}, respons
     console.error("Id not found")
   }
 }
+
+// Delete one item
+// Router: /api/del/:id
+
+export const delProduct = ({ params, response }: { params: { id: string }, response: any }) => {
+  let indexOfProduct: number | undefined = products.findIndex(el => el.id === params.id)
+  console.log(products)
+
+  if (indexOfProduct == -1)
+  {
+    response.status = 404
+    response.body = {
+      isOk: false,
+      mess: "Product not found"
+    }
+    console.error("Product not found ")
+    console.log(products)
+  }
+  else {
+    products.splice(indexOfProduct, 1)
+    response.status = 200
+    response.body = {
+      isOk: true,
+      data: products
+    }
+    console.log(products)
+  }
+
+}
