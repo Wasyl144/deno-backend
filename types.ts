@@ -1,9 +1,9 @@
 export interface Product {
-  id: String,
-  name: String,
-  prize: Number,
+  id: string,
+  name: string,
+  prize: number,
   prop: {
-    color: String,
-    size: Number,
+    color: string,
+    size: number,
   }
 }
