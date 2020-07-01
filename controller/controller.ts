@@ -98,7 +98,6 @@ export const delProduct = ({ params, response }: { params: { id: string }, respo
     }
     console.log(products)
   }
-
 }
 
 // add item POST
