@@ -1,9 +1,8 @@
 # deno-backend
-First attempt to make a backend in Deno
+First attempt to make a backend in Deno.
+API for online store created in TypeScript.
 
-## API for online store created in TypeScript.
-
-####How to run
+## How to run
 
 You need to install deno, after this write this commad to shell:
 
